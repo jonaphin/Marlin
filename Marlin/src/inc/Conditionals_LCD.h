@@ -320,6 +320,7 @@
 // FSMC/SPI TFT Panels (LVGL)
 #if ENABLED(TFT_LVGL_UI)
   #define HAS_TFT_LVGL_UI 1
+  #define SERIAL_RUNTIME_HOOK 1
 #endif
 
 // FSMC/SPI TFT Panels
@@ -815,22 +816,6 @@
       #define TOTAL_PROBING (MULTIPLE_PROBING + EXTRA_PROBING)
     #else
       #define TOTAL_PROBING MULTIPLE_PROBING
-    #endif
-  #endif
-  #if ENABLED(PREHEAT_BEFORE_PROBING)
-    #ifndef PROBING_NOZZLE_TEMP
-      #define PROBING_NOZZLE_TEMP 0
-    #endif
-    #ifndef PROBING_BED_TEMP
-      #define PROBING_BED_TEMP 0
-    #endif
-  #endif
-  #if ENABLED(PREHEAT_BEFORE_LEVELING)
-    #ifndef LEVELING_NOZZLE_TEMP
-      #define LEVELING_NOZZLE_TEMP 0
-    #endif
-    #ifndef LEVELING_BED_TEMP
-      #define LEVELING_BED_TEMP 0
     #endif
   #endif
 #else
