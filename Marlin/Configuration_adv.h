@@ -3238,15 +3238,10 @@
 /**
  * Synchronous Laser Control with M106/M107
  *
-<<<<<<< HEAD
- * By default M106 / M107 applies the new fan speed immediately. This is fine
- * for fans, but unsuitable for a PWM/TTL laser attached to the fan header.
-=======
  * Marlin normally applies M106/M107 fan speeds at a time "soon after" processing
  * a planner block. This is too inaccurate for a PWM/TTL laser attached to the fan
  * header (as with some add-on laser kits). Enable this option to set fan/laser
  * speeds with much more exact timing for improved print fidelity.
->>>>>>> dd76a50683358732ec3c1a9dadeef479d42d3c94
  *
  * NOTE: This option sacrifices some cooling fan speed options.
  */
@@ -3455,10 +3450,6 @@
  * Up to 25 may be defined, but the actual number is LCD-dependent.
  */
 
-<<<<<<< HEAD
-  #define USER_DESC_1 "Home & UBL Info"
-  #define USER_GCODE_1 "G28\nG29 W"
-=======
 // Custom Menu: Main Menu
 //#define CUSTOM_MENU_MAIN
 #if ENABLED(CUSTOM_MENU_MAIN)
@@ -3509,7 +3500,6 @@
   //#define CONFIG_MENU_ITEM_3_DESC "Radio OFF"
   //#define CONFIG_MENU_ITEM_3_GCODE "M118 [ESP110] OFF pwd=12345678"
   //#define CONFIG_MENU_ITEM_3_CONFIRM
->>>>>>> dd76a50683358732ec3c1a9dadeef479d42d3c94
 
   //#define CONFIG_MENU_ITEM_4_DESC "Wifi ????"
   //#define CONFIG_MENU_ITEM_4_GCODE "M118 ????"

@@ -461,12 +461,8 @@
 #define HEATER_5_MINTEMP   5
 #define HEATER_6_MINTEMP   5
 #define HEATER_7_MINTEMP   5
-<<<<<<< HEAD
-#define BED_MINTEMP        0
-=======
 #define BED_MINTEMP        5
 #define CHAMBER_MINTEMP    5
->>>>>>> dd76a50683358732ec3c1a9dadeef479d42d3c94
 
 // Above this temperature the heater will be switched off.
 // This can protect components from overheating, but NOT from shorts and failures.
@@ -479,9 +475,6 @@
 #define HEATER_5_MAXTEMP 275
 #define HEATER_6_MAXTEMP 275
 #define HEATER_7_MAXTEMP 275
-<<<<<<< HEAD
-#define BED_MAXTEMP      120
-=======
 #define BED_MAXTEMP      150
 #define CHAMBER_MAXTEMP  60
 
@@ -494,7 +487,6 @@
 #define HOTEND_OVERSHOOT 15   // (°C) Forbid temperatures over MAXTEMP - OVERSHOOT
 #define BED_OVERSHOOT    10   // (°C) Forbid temperatures over MAXTEMP - OVERSHOOT
 #define COOLER_OVERSHOOT  2   // (°C) Forbid temperatures closer than OVERSHOOT
->>>>>>> dd76a50683358732ec3c1a9dadeef479d42d3c94
 
 //===========================================================================
 //============================= PID Settings ================================
@@ -658,12 +650,8 @@
 
 #define THERMAL_PROTECTION_HOTENDS // Enable thermal protection for all extruders
 #define THERMAL_PROTECTION_BED     // Enable thermal protection for the heated bed
-<<<<<<< HEAD
-//#define THERMAL_PROTECTION_CHAMBER // Enable thermal protection for the heated chamber
-=======
 #define THERMAL_PROTECTION_CHAMBER // Enable thermal protection for the heated chamber
 #define THERMAL_PROTECTION_COOLER  // Enable thermal protection for the laser cooling
->>>>>>> dd76a50683358732ec3c1a9dadeef479d42d3c94
 
 //===========================================================================
 //============================= Mechanical Settings =========================
@@ -1076,11 +1064,7 @@
 #define PROBING_MARGIN 10
 
 // X and Y axis travel speed (mm/min) between probes
-<<<<<<< HEAD
-#define XY_PROBE_SPEED (150*60)
-=======
 #define XY_PROBE_FEEDRATE (133*60)
->>>>>>> dd76a50683358732ec3c1a9dadeef479d42d3c94
 
 // Feedrate (mm/min) for the first approach when double-probing (MULTIPLE_PROBING == 2)
 #define Z_PROBE_FEEDRATE_FAST (4*60)
@@ -1717,16 +1701,6 @@
 // Preheat Constants - Up to 5 are supported without changes
 //
 #define PREHEAT_1_LABEL       "PLA"
-<<<<<<< HEAD
-#define PREHEAT_1_TEMP_HOTEND 185
-#define PREHEAT_1_TEMP_BED     45
-#define PREHEAT_1_FAN_SPEED   255 // Value from 0 to 255
-
-#define PREHEAT_2_LABEL       "ABS"
-#define PREHEAT_2_TEMP_HOTEND 240
-#define PREHEAT_2_TEMP_BED     70
-#define PREHEAT_2_FAN_SPEED   255 // Value from 0 to 255
-=======
 #define PREHEAT_1_TEMP_HOTEND 180
 #define PREHEAT_1_TEMP_BED     70
 #define PREHEAT_1_TEMP_CHAMBER 35
@@ -1737,7 +1711,6 @@
 #define PREHEAT_2_TEMP_BED    110
 #define PREHEAT_2_TEMP_CHAMBER 35
 #define PREHEAT_2_FAN_SPEED     0 // Value from 0 to 255
->>>>>>> dd76a50683358732ec3c1a9dadeef479d42d3c94
 
 /**
  * Nozzle Park
